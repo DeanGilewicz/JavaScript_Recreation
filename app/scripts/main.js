@@ -34,3 +34,32 @@ dean.first = function (x) {
 }
 
 console.log(dean.first(test_array1));
+
+
+// Last Function - Returns the last element of an array.
+
+
+var test_array2 = ['Steve', 'Lee', 'Jane', 'Sue', 'Graham', 'Pam', 'Heather', 'John'];
+
+dean.last = function () {
+
+	return test_array2[test_array2.length - 1];
+}
+
+console.log(dean.last(test_array2));
+
+
+// Max Function - Returns the max value in a list
+
+var test_array3 = [54, 32, 231253, 2341, 12, 4, 5875, 3];
+
+dean.highest = function (x) {
+	var max = 0;
+	for (i = 0; i < x.length; i ++) {
+			if (x[i] > max) {
+					max = x[i];
+			}
+	}
+	return max;
+};
+console.log(dean.highest(test_array3));
