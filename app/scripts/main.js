@@ -63,3 +63,19 @@ dean.highest = function (x) {
 	return max;
 };
 console.log(dean.highest(test_array3));
+
+
+// Min Function - Returns the minimum value in a list
+
+var test_array4 = [423, 32, 77, 3, 489, 49, 6234];
+
+dean.lowest = function (x) {
+	var min = 0;
+	for (i = 0; i < x.length; i ++) {
+			if (x[i] < min) {
+					min = x[i];
+			}
+	}
+	return min;
+};
+console.log(dean.lowest(test_array4));
