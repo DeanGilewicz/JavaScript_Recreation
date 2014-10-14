@@ -79,3 +79,17 @@ dean.lowest = function (x) {
 	return min;
 };
 console.log(dean.lowest(test_array4));
+
+
+// Size Function - Returns the number of values in a list
+
+var test_array5 = {temp:'cool', age:20, color:'blue', street:99, food:'ice cream', pets:13, holiday:'halloween'};
+
+dean.value_num = function (obj) {
+	var num = obj.value;
+	for (i = 0; i < obj.length; i ++) {
+		return num;
+	}
+}
+
+console.log(dean.value_num(test_array5));
