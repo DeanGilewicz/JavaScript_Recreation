@@ -93,3 +93,30 @@ dean.value_num = function (obj) {
 }
 
 console.log(dean.value_num(test_array5));
+
+
+// ._object - converts arrays into objects
+
+var ironYard = ["Tim","Wendy","Richard", "Chelsea", "Emory", "Victoria", "John", "Joanna","Max", "Dean"];
+var age = ["30yrs", "25yrs", "24yrs", "23yrs", "22yrs", "31yrs", "29yrs", "35yrs", "27yrs", "30yrs"];
+
+dean.object = function( ironYard, age) {
+    if (ironYard == null) return {};
+    var result = {};
+
+    for (var i = 0, length = ironYard.length; i < length; i++) {
+      if (age) {
+
+        result[ironYard[i]] = age[i];
+      }
+
+      else {
+        result[ironYard[i][0]] = ironYard[i][1];
+      }
+    }
+    return result;
+  };
+
+  var object_to_array = dean.object(ironYard, age);
+
+  console.log(object_to_array);
