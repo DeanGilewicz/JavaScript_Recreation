@@ -44,8 +44,10 @@
       initial_greeting = 'Good Morning';
     } else if (time_hours >= 12 && time_hours <= 17) {
       initial_greeting = 'Good Afternoon';
-    } else if (time_hours > 17 && time_hours <= 24) {
+    } else if (time_hours > 17 && time_hours <= 21) {
       initial_greeting = 'Good Evening';
+    } else if (time_hours > 21 && time_hours <= 24) {
+      initial_greeting = 'Good Night';
     }
 
     final_greeting = (message != null) ? initial_greeting + ', ' + message : initial_greeting;
@@ -89,29 +91,29 @@
 
 
   // Lowest Function - Returns the minimum value in a list ** ONLY COMPARES 1st AND SECOND VALIES AT THE MOMENT
-  var test_array = [50, 60, 77, 9, 489, 6, 6234];
-
-  dean.lowest = function (x) {
-
-    for (i = 0; i < x.length; i++) {
-      var current = x[i];
-      var next = x[i + 1];
-
-      if (x = null) {
-        return "This is not an array";
-
-      } else if (current > next) {
-          current = next;
-          return next;
-
-      } else {
-          next = current;
-          return current;
-      }
-    }
-  };
-
-  console.log(dean.lowest(test_array));
+  // var test_array = [50, 60, 77, 9, 489, 6, 6234];
+  //
+  // dean.lowest = function (x) {
+  //
+  //   for (i = 0; i < x.length; i++) {
+  //     var current = x[i];
+  //     var next = x[i + 1];
+  //
+  //     if (x = null) {
+  //       return "This is not an array";
+  //
+  //     } else if (current > next) {
+  //         current = next;
+  //         return next;
+  //
+  //     } else {
+  //         next = current;
+  //         return current;
+  //     }
+  //   }
+  // };
+  //
+  // console.log(dean.lowest(test_array));
 
 
 
@@ -162,17 +164,15 @@
 Question 3: Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
 
 *****************************************************************************************************************/
-
-// dean.vowel = function (letter) {
-//
-//   if (letter === "a" || "e" || "i" || "o" || "u") {
+// dean.vowel = function (x) {
+//   if (x.string === "a" || "e" || "i" || "o" || "u") {
 //     return "It is a vowel";
 //   }
 //   else {
 //     return "No vowel here";
 //   }
 // };
-// console.log(vowel(a));
+// console.log(vowel(x));
 
 
 /****************************************************************************************************************
