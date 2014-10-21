@@ -91,34 +91,34 @@
 
 
   // Lowest Function - Returns the minimum value in a list ** ONLY COMPARES 1st AND SECOND VALUES AT THE MOMENT
-  var array = [50, 60, 77, 9, 489, 6, 6234];
-
-  dean.lowest = function (x) {
-
-    // iterate through data and sort data from smallest to largest
-    // return 1st value
-
-    var data = [];
-
-    for (i = 0; i < x.length; i++) {
-
-    var current = x[i];
-
-    var next = x[i + 1];
-
-      if (x = null) {
-        return "This is not an array";
-
-      } else if (current < next) {
-          current = current;
-          return current;
-
-      } else {
-          current = next;
-          return next;
-      }
-    }
-  };
+  // var array = [50, 60, 77, 9, 489, 6, 6234];
+  //
+  // dean.lowest = function (x) {
+  //
+  //   // iterate through data and sort data from smallest to largest
+  //   // return 1st value
+  //
+  //   var data = [];
+  //
+  //   for (i = 0; i < x.length; i++) {
+  //
+  //   var current = x[i];
+  //
+  //   var next = x[i + 1];
+  //
+  //     if (x = null) {
+  //       return "This is not an array";
+  //
+  //     } else if (current < next) {
+  //         current = current;
+  //         return current;
+  //
+  //     } else {
+  //         current = next;
+  //         return next;
+  //     }
+  //   }
+  // };
 
 
   // Object Function - converts arrays into objects. Pass either a single list of key:value pairs, or a list of keys and a list of values.
