@@ -90,7 +90,7 @@
   };
 
 
-  // Lowest Function - Returns the minimum value in a list ** ONLY COMPARES 1st AND SECOND VALUES AT THE MOMENT
+  // Lowest Function - Returns the minimum value in a list
   dean.lowest = function (x) {
     var min = x[0];
     for (i = 1; i < x.length; i ++) {
