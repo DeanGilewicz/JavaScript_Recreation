@@ -1,6 +1,7 @@
-## JavaScript Recreations
+## JavaScript Recreation
 
 ### The following JavaScript functions have been created in the object dean.
+
 
 To call the function you should use "dean." and then type the name of the function you want to use followed by (). Required parameters are listed below.
 
